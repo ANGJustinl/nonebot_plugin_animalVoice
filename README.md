@@ -27,36 +27,50 @@ _✨Nonebot兽语译者插件✨_
 ## 💿 安装
 
 ### 1. nb-cli安装（推荐）
-bot根目录下打开命令行，执行nb命令安装插件，插件配置会自动添加至配置文件  
+bot根目录下打开命令行，执行nb命令安装插件，插件配置会自动添加至配置文件 
+ 
 ```
 nb plugin install nonebot_plugin_face2cartoonpic
 ```
 
 ### 2. pip安装
+
 ```
 pip install nonebot_plugin_face2cartoonpic --upgrade
+
 ```  
+
 打开 nonebot2 项目的 ```bot.py``` 文件, 在其中写入  
 ```nonebot.load_plugin('nonebot_plugin_animalVoice')```  
   
 或在bot路径```pyproject.toml```的```[tool.nonebot]```的```plugins```中添加```nonebot_plugin_animalVoice```即可  
-pyproject.toml配置例如：  
+pyproject.toml配置例如： 
+
 ``` 
+
 [tool.nonebot]
 plugin_dirs = ["src/plugins"]
 plugins = ["nonebot_plugin_animalVoice","xxxxx"]
+
 ```
   
 
-```  
+
 ## 🎉 使用
 ### 指令表
 | 指令 | 需要@ | 范围 | 说明 |
 |:-----:|:----:|:----:|:----:|
 | [兽音加密]/[convert] | 否 | 群聊/私聊 | 发送需要加密的文字 |
 | [兽音解密]/[deconvert] | 否 | 群聊/私聊 | 发送需要解密的文字 |
+| [切噜一下]/[cherulize] | 否 | 群聊/私聊 | 发送需要解密的文字 |
+| [切噜～]/[decherulize] | 否 | 群聊/私聊 | 发送需要解密的文字 |
 
 
 **注意**
 
 默认情况下, 您应该在指令前加上命令前缀, 通常是 /
+
+
+### 🧡特别感谢 
+
+HoshinoBot: https://github.com/Ice-Cirno/HoshinoBot 提供了切噜切噜的算法
