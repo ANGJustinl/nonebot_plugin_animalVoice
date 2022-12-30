@@ -24,6 +24,12 @@ _✨Nonebot兽语译者插件✨_
 ---  
  </div> 
   
+## ✔ 使用例
+
+![3`$HP~HVN%SK(IV@2HO7X{M](https://user-images.githubusercontent.com/96008766/210118707-b00e90ff-ce8c-4fdb-bcd9-f3a18c2ebc50.png)
+
+![OYJ5N2~Z@XZ)B6FL %MEIKA](https://user-images.githubusercontent.com/96008766/210118729-8e8a6ff0-f911-4514-aac9-a87f714051e9.png)
+  
 ## 💿 安装
 
 ### 1. nb-cli安装（推荐）
@@ -53,7 +59,6 @@ plugin_dirs = ["src/plugins"]
 plugins = ["nonebot_plugin_animalVoice","xxxxx"]
 
 ```
-  
 
 
 ## 🎉 使用
