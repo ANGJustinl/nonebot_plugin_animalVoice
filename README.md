@@ -36,13 +36,13 @@ _✨Nonebot兽语译者插件✨_
 bot根目录下打开命令行，执行nb命令安装插件，插件配置会自动添加至配置文件 
  
 ```
-nb plugin install nonebot_plugin_face2cartoonpic
+nb plugin install nonebot_plugin_animalVoice
 ```
 
 ### 2. pip安装
 
 ```
-pip install nonebot_plugin_face2cartoonpic --upgrade
+pip install nonebot_plugin_animalVoice --upgrade
 
 ```  
 
