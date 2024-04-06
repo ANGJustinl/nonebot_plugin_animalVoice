@@ -3,7 +3,7 @@ name = "nonebot-plugin-animalvoice"
 version = "0.2.0"
 description = "✨Nonebot兽语译者插件✨"
 authors = ["angjustinl <angjustin@163.com>"]
-license = "MIT"
+license = "GPLv3"
 readme = "README.md"
 packages = [{include = "nonebot_plugin_animalvoice"}]
 
