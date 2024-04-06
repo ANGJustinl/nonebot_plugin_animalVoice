@@ -9,7 +9,7 @@
   
 _✨Nonebot兽语译者插件✨_
 
----
+
   
 <a href="./LICENSE">
     <img src="https://img.shields.io/github/license/ANGJustinl/nonebot_plugin_animalVoice" alt="license">
@@ -20,8 +20,8 @@ _✨Nonebot兽语译者插件✨_
 <a href="https://www.python.org">
     <img src="https://img.shields.io/badge/python-3.7+-blue.svg" alt="python">
 </a>
+<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
 
----  
  </div> 
   
 ## ✔ 使用例
@@ -43,23 +43,18 @@ nb plugin install nonebot_plugin_animalVoice
 
 ```
 pip install nonebot_plugin_animalVoice --upgrade
-
 ```  
 
 打开 nonebot2 项目的 ```bot.py``` 文件, 在其中写入  
 ```nonebot.load_plugin('nonebot_plugin_animalVoice')```  
-  
+
 或在bot路径```pyproject.toml```的```[tool.nonebot]```的```plugins```中添加```nonebot_plugin_animalVoice```即可  
 pyproject.toml配置例如： 
-
 ``` 
-
 [tool.nonebot]
 plugin_dirs = ["src/plugins"]
 plugins = ["nonebot_plugin_animalVoice","xxxxx"]
-
 ```
-
 
 ## 🎉 使用
 ### 指令表
@@ -70,11 +65,17 @@ plugins = ["nonebot_plugin_animalVoice","xxxxx"]
 | [切噜一下]/[cherulize] | 否 | 群聊/私聊 | 发送需要解密的文字 |
 | [切噜～]/[decherulize] | 否 | 群聊/私聊 | 发送需要解密的文字 |
 
-
 **注意**
-
 默认情况下, 您应该在指令前加上命令前缀, 通常是 /
 
+## 🛠 配置项
+
+| 配置项 | 类型 | 说明 |
+|:-----:|:----:|:----:|
+| customize_cmd_animalconvert | str | 自定义触发兽音加密命令 |
+| customize_cmd_animaldeconvert | str | 自定义触发兽音解密命令 |
+| customize_cmd_cherulizing | str | 自定义触发切噜一下命令 |
+| customize_cmd_decherulizing | str | 自定义触发切噜～命令 |
 
 ### 🧡特别感谢 
 
