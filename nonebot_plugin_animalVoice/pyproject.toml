@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "nonebot-plugin-animalvoice"
+version = "0.2.0"
+description = "✨Nonebot兽语译者插件✨"
+authors = ["angjustinl <angjustin@163.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "nonebot_plugin_animalvoice"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+nonebot2 = "^2.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
