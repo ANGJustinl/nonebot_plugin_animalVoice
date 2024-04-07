@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nonebot-plugin-animalvoice"
-version = "0.2.0"
+version = "0.2.0-rc1"
 description = "✨Nonebot兽语译者插件✨"
 authors = ["angjustinl <angjustin@163.com>"]
 license = "GPLv3"

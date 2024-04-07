@@ -3,7 +3,7 @@ from nonebot.params import Arg
 from nonebot.adapters.onebot.v11 import MessageEvent, Message, Bot
 from nonebot.typing import T_State
 
-from .config import Config
+from .config import plugin_config as Config
 from .AnimalVoice.converter import msg_convert, msg_deconvert
 
 convert = on_command(
@@ -15,6 +15,11 @@ convert = on_command(
 deconvert = on_command(
     Config.customize_cmd_animaldeconvert,
     aliases={"deanimalvoice", "deconvert"},
+    priority=5,
+    block=True,
+)
+help = on_command(
+    "译者帮助",
     priority=5,
     block=True,
 )
@@ -95,3 +100,19 @@ async def _(bot: Bot, state: T_State, event: MessageEvent):
     )
     await bot.call_api("send_group_forward_msg", group_id=event.group_id, messages=msgs)
     await deconvert.finish()
+
+@help.handle()
+async def _(bot: Bot, event: MessageEvent):
+    msgs = []
+    msgs.append(
+        {
+            "type": "node",
+            "data": {
+                "name": "译者bot",
+                "uin": bot.self_id,
+                "content": "指令如下"+"\n兽音加密 /"+Config.customize_cmd_animalconvert+"\n兽音解密 /"+Config.customize_cmd_animaldeconvert+"\n切噜一下加密 /"+Config.customize_cmd_cherulizing+"\n切噜～解密 /"+Config.customize_cmd_decherulizing,
+            },
+        }
+    )
+    await bot.call_api("send_group_forward_msg", group_id=event.group_id, messages=msgs)
+    await help.finish()

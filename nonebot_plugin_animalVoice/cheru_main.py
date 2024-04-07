@@ -3,7 +3,7 @@ from nonebot.params import Arg
 from nonebot.adapters.onebot.v11 import MessageEvent, Message, Bot
 from nonebot.typing import T_State
 
-from .config import Config
+from .config import plugin_config as Config
 from .Cheru import cheru2str, str2cheru
 
 cherulizing = on_command(
