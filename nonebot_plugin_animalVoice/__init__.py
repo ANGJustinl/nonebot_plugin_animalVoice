@@ -20,28 +20,28 @@ __plugin_meta__ = PluginMetadata(
                 "trigger_method": "on_cmd",
                 "trigger_condition": "/" + Config.customize_cmd_animalconvert,
                 "brief_des": "将 文字/图片 加密为 兽语",
-                "detail_des": "发送命令激活后再发送要加密内容"
+                "detail_des": "发送命令激活后再发送要加密内容",
             },
             {
                 "func": "切噜一下加密",
                 "trigger_method": "on_cmd",
                 "trigger_condition": "/" + Config.customize_cmd_cherulizing,
                 "brief_des": "将 文字/图片 加密为 切噜语",
-                "detail_des": "发送命令激活后再发送要加密内容"
+                "detail_des": "发送命令激活后再发送要加密内容",
             },
             {
                 "func": "兽音解密",
                 "trigger_method": "on_cmd",
                 "trigger_condition": "/" + Config.customize_cmd_animaldeconvert,
                 "brief_des": "将 兽语 解密",
-                "detail_des": "发送命令激活后再发送要解密内容"
+                "detail_des": "发送命令激活后再发送要解密内容",
             },
             {
                 "func": "切噜～解密",
                 "trigger_method": "on_cmd",
                 "trigger_condition": "/" + Config.customize_cmd_decherulizing,
                 "brief_des": "将 切噜～语 解密",
-                "detail_des": "发送命令激活后再发送要解密内容"
+                "detail_des": "发送命令激活后再发送要解密内容",
             },
         ],
         "menu_template": "default",

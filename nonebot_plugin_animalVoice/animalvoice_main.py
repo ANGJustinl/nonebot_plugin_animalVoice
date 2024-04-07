@@ -101,6 +101,7 @@ async def _(bot: Bot, state: T_State, event: MessageEvent):
     await bot.call_api("send_group_forward_msg", group_id=event.group_id, messages=msgs)
     await deconvert.finish()
 
+
 @help.handle()
 async def _(bot: Bot, event: MessageEvent):
     msgs = []
@@ -110,7 +111,15 @@ async def _(bot: Bot, event: MessageEvent):
             "data": {
                 "name": "译者bot",
                 "uin": bot.self_id,
-                "content": "指令如下"+"\n兽音加密 /"+Config.customize_cmd_animalconvert+"\n兽音解密 /"+Config.customize_cmd_animaldeconvert+"\n切噜一下加密 /"+Config.customize_cmd_cherulizing+"\n切噜～解密 /"+Config.customize_cmd_decherulizing,
+                "content": "指令如下"
+                + "\n兽音加密 /"
+                + Config.customize_cmd_animalconvert
+                + "\n兽音解密 /"
+                + Config.customize_cmd_animaldeconvert
+                + "\n切噜一下加密 /"
+                + Config.customize_cmd_cherulizing
+                + "\n切噜～解密 /"
+                + Config.customize_cmd_decherulizing,
             },
         }
     )
